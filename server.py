@@ -13,11 +13,11 @@ def homepage():
 
 @app.route('/learn')
 def learn():
-    return render_template('homepage.html', temp=temp) 
+    return render_template('learn.html', temp=temp) 
 
 @app.route('/quiz')
 def quiz():
-    return render_template('homepage.html', temp=temp) 
+    return render_template('quiz.html', temp=temp) 
 
 if __name__ == '__main__':
    app.run(debug = True)
