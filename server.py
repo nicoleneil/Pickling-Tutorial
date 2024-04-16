@@ -63,12 +63,12 @@ def homepage():
 
 @app.route('/learn')
 def learn():
-    slide = learn_data[0]
+    slide = learn_data[1]
     return render_template('learn.html', slide=slide) 
 
 @app.route('/learn/<id>')
 def learn_slide(id=None):
-    slide = learn_data[0]
+    slide = learn_data[1]
     id = int(id)
     for element in learn_data:
         if element["id"] == id:
