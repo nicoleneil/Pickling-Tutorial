@@ -55,6 +55,29 @@ learn_data = [
     }
 ]
 
+quiz_data = [
+    {
+        "id": 0,
+        "question": "This is the start state."
+    },
+    {
+        "id": 1,
+        "question": "Ultimately, the process of pickling is done as a food ___________________ method."
+    },
+    {
+        "id": 2,
+        "question": "What is brine?"
+    },
+    {
+        "id": 3,
+        "question": "What is the best way to store canned/pickled food items?"
+    },
+    {
+        "id": 4,
+        "question": "Why is oxygen bad when pickling cucumbers?"
+    }
+]
+
 # ROUTES
 
 @app.route('/')
@@ -75,9 +98,19 @@ def learn_slide(id=None):
             slide = element  
     return render_template('learn.html', slide=slide)  
 
+@app.route('/quiz/<id>')
+def quiz_slide(id=None):
+    slide = quiz_data[0]
+    id = int(id)
+    for element in quiz_data:
+        if element["id"] == id:
+            slide = element  
+    return render_template('quiz.html', slide=slide)  
+
 @app.route('/quiz')
 def quiz():
-    return render_template('quiz.html', temp=temp) 
+    slide = quiz_data[0]
+    return render_template('quiz.html',slide=slide) 
 
 if __name__ == '__main__':
    app.run(debug = True)

@@ -2,6 +2,11 @@
 
 {% block content %}
 
+<script>
+    let slide = {{ slide | tojson | safe }};
+    console.log(slide)
+</script>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +17,10 @@
 </head>
 
 <body>
-  <h1>Quiz page</h1>
+  <h1>{{ slide.question }}</h1>
+  <button id="next_quiz">Click to begin or move onto next step.</button>
+
+  <script src="../static/quiz.js"></script>
 </body>
 
 </html>
