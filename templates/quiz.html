@@ -17,8 +17,17 @@
 </head>
 
 <body>
-  <h1>{{ slide.question }}</h1>
-  <button id="next_quiz">Click to begin or move onto next step.</button>
+  <h1>{{ slide.qnum }}. {{ slide.question }}</h1>
+  <form id="quiz-form">
+    <div id="options-container">
+      {% if slide.options %}
+        {% for option in slide.options %}
+          <label><input type="radio" name="option" value="{{ option }}">  {{ option }}</label><br>
+        {% endfor %}
+      {% endif %}
+    </div>
+  </form>
+  <button id="next_quiz">Next</button>
 
   <script src="../static/quiz.js"></script>
 </body>
