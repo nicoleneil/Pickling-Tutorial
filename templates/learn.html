@@ -2,6 +2,16 @@
 
 {% block content %}
 
+<style>
+img {
+  float: left;
+  width:  250px;
+  height: 250px;
+  object-fit: cover;
+  padding: 5%
+}
+</style>
+
 <script>
     let slide = {{ slide | tojson | safe }};
     console.log(slide)
@@ -20,20 +30,26 @@
   <h1>{{ slide.instruction }}</h1>
   
   {% if slide.id == 1 %}
-    <h2>Guess! Which of these do we need?</h2>
-    <form id="step1">
-      <input type="radio" id="option_a" name="answer" value="A">
-      <label for="option_a">Milk</label><br>
-      <input type="radio" id="option_b" name="answer" value="B">
-      <label for="option_b">Dill</label><br>
-      <input type="radio" id="option_c" name="answer" value="C">
-      <label for="option_c">Alcohol</label><br>
-      <button type="button" id="submit_quiz">Submit Answer</button><br><br>
-    </form>
-    <div id="quiz_feedback"></div>
+
+  <label>
+    <input name="ans1" type="radio" class="answer" />
+    <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/02/Glass-and-bottle-of-milk-fe0997a.jpg?resize=768,574" alt="Milk"/>
+    <figcaption>Milk</figcaption>
+  </label>
+  <label>
+    <input name="ans2" type="radio" class="answer" />
+    <img src="https://www.eatingwell.com/thmb/JpO2j5YTFLxFT_oQ2XtFPsbAOcE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/dill-ac021c11b2dc41ac83b809819617f042.jpg" alt="Dill" />
+    <figcaption>Dill</figcaption>
+  </label>
+  <label>
+    <input name="ans3" type="radio" class="answer" />
+    <img src="https://i5.walmartimages.com/seo/Jagermeister-Herbal-Liqueur-750-ml-Bottle-35-ABV_fa58bf1e-4919-43a3-aa2f-765d9b4ac8d3.be19a28334a592aaa7705eddd3440664.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF" alt="Alcohol Bottle" />
+    <figcaption>Alcohol</figcaption>
+  </label>
+
   {% endif %}
 
-  <button id="next_learn">Click to begin or move onto next step.</button>
+  <br><br><button id="next_learn">Click to begin or move onto next step.</button>
 
 
   <script src="../static/learn.js"></script>
