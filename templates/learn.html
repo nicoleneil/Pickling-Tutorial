@@ -128,23 +128,23 @@ img {
 
   {% if slide.id == 10 %}
   Click to remove the air bubbles. **need to edit pic <br>
-  <img src="https://img.freepik.com/premium-vector/blue-flat-air-bubbles-soap-bubbles-outline-water_760231-588.jpg" alt="Bubbles" />
+  <img src="{{ slide.bubbles }}" alt="Bubbles" />
   {% endif %}
 
   {% if slide.id == 11 %}
   <label>
     <input name="ans1" type="radio" class="answer" />
-    <img src="https://dijf55il5e0d1.cloudfront.net/images/rr/4/2/8/42835_1000.jpg" alt="Counter"/>
+    <img src="{{ slide.counter }}" alt="Counter"/>
     <figcaption>Counter</figcaption>
   </label>
   <label>
     <input name="ans2" type="radio" class="answer" />
-    <img src="https://m.media-amazon.com/images/I/51llsc7MClL.jpg" alt="Fridge" />
+    <img src="{{ slide.fridge }}" alt="Fridge" />
     <figcaption>Fridge</figcaption>
   </label>
   <label>
     <input name="ans3" type="radio" class="answer" />
-    <img src="https://southviewdesign.com/assets/components/phpthumbof/cache/watch_the_game_outside.bf7f96f6ba58290eb16bcfa12ee69ce6.jpg" alt="Outside" />
+    <img src="{{ slide.outside }}" alt="Outside" />
     <figcaption>Outside</figcaption>
   </label><br><br>
   {% endif %}

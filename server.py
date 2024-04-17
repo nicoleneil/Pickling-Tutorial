@@ -69,12 +69,16 @@ learn_data = [
     {
         "id": 10,
         "instruction": "Remove air bubbles by tapping against the counter and adding more brine if necessary.",
-        "heading": "Remove the air bubbles!"
+        "heading": "Remove the air bubbles!",
+        "bubbles": "https://img.freepik.com/premium-vector/blue-flat-air-bubbles-soap-bubbles-outline-water_760231-588.jpg"
     },
     {
         "id": 11,
         "instruction": "Store your mix and wait at least 48 hours before opening!",
-        "heading": "Where should you store your mix?"
+        "heading": "Where should you store your mix?",
+        "counter": "https://dijf55il5e0d1.cloudfront.net/images/rr/4/2/8/42835_1000.jpg",
+        "fridge": "https://m.media-amazon.com/images/I/51llsc7MClL.jpg",
+        "outside": "https://southviewdesign.com/assets/components/phpthumbof/cache/watch_the_game_outside.bf7f96f6ba58290eb16bcfa12ee69ce6.jpg"
     }
 ]
 
