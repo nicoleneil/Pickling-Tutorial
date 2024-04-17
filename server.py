@@ -7,51 +7,63 @@ temp = []
 learn_data = [
     {
         "id": 0,
-        "instruction": "This is the learning module."
+        "instruction": "This is the learning module.",
+        "heading": "Start Page"
     },
     {
         "id": 1,
-        "instruction": "Let's begin assembling our materials."
+        "instruction": "Let's begin assembling our materials.",
+        "heading": "Guess! Which of these do we need?"
     },
     {
         "id": 2,
-        "instruction": "Prepare the jars. Wash and dry."
+        "instruction": "Prepare the jars. Wash and dry.",
+        "heading": "Flip those jars!"
     },
     {
         "id": 3,
-        "instruction": "Pick what you'd like to pickle."
+        "instruction": "Pick what you'd like to pickle.",
+        "heading": "Select...what are some fruits and vegetables that can be pickled?"
     },
     {
         "id": 4,
-        "instruction": "Prepare the vegetables by cutting or peeling them in whatever shapes and sizes you prefer."
+        "instruction": "Prepare the vegetables by cutting or peeling them in whatever shapes and sizes you prefer.",
+        "heading": "Let’s prepare our vegetables to be pickled. Drag and drop to separate the carrot into 5 pieces!"
     },
     {
         "id": 5,
-        "instruction": "Add the flavorings. Divide the herbs, spices, or garlic you are using between the jars."
+        "instruction": "Add the flavorings. Divide the herbs, spices, or garlic you are using between the jars.",
+        "heading": "Hit each check mark to verify you’ve got it!"
     },
     {
         "id": 6,
-        "instruction": "Add the vegetables to the jars. Be sure there is ½ inch of space from the rim to the tops of the vegetables. Pack them in without smashing."
+        "instruction": "Add the vegetables to the jars. Be sure there is ½ inch of space from the rim to the tops of the vegetables. Pack them in without smashing.",
+        "heading": "Predict … how many sliced cucumbers can fit inside this jar?"
     },
     {
         "id": 7,
-        "instruction": "Begin boiling the water."
+        "instruction": "Begin boiling the water.",
+        "heading": "Pick the fallacy about boiling water…"
     },
     {
         "id": 8,
-        "instruction": "Create the brine."
+        "instruction": "Create the brine.",
+        "heading": "Watch this video..."
     },
     {
         "id": 9,
-        "instruction": "Fill the jar with brine and seal it."
+        "instruction": "Fill the jar with brine and seal it.",
+        "heading": "Click to view each part!"
     },
     {
         "id": 10,
-        "instruction": "Remove air bubbles by tapping against the counter and adding more brine if necessary."
+        "instruction": "Remove air bubbles by tapping against the counter and adding more brine if necessary.",
+        "heading": "Remove the air bubbles!"
     },
     {
         "id": 11,
-        "instruction": "Store your mix and wait at least 48 hours before opening!"
+        "instruction": "Store your mix and wait at least 48 hours before opening!",
+        "heading": "Where should you store your mix?"
     }
 ]
 
