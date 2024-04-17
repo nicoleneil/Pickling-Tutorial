@@ -22,7 +22,7 @@ learn_data = [
         "id": 2,
         "instruction": "Prepare the jars. Wash and dry.",
         "heading": "Flip those jars!",
-        "jar": "https://www.shutterstock.com/image-vector/hand-drawn-mason-jar-contour-600nw-1049331473.jpg"
+        "jar": "https://www.webstaurantstore.com/images/products/large/592230/2454581.jpg"
     },
     {
         "id": 3,
@@ -43,7 +43,8 @@ learn_data = [
     {
         "id": 5,
         "instruction": "Add the flavorings. Divide the herbs, spices, or garlic you are using between the jars.",
-        "heading": "Hit each check mark to verify you’ve got it!"
+        "heading": "Hit each check mark to verify you’ve got it!",
+        "jar": "https://www.webstaurantstore.com/images/products/large/592230/2454581.jpg"
     },
     {
         "id": 6,
