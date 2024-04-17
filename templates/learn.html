@@ -30,7 +30,7 @@ img {
   <h1>{{ slide.instruction }}</h1>
   
   {% if slide.id == 1 %}
-  <h2>Guess! Which of these do we need?</h2>
+  <h2>{{ slide.heading }}</h2>
   <label>
     <input name="ans1" type="radio" class="answer" />
     <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/02/Glass-and-bottle-of-milk-fe0997a.jpg?resize=768,574" alt="Milk"/>
@@ -49,14 +49,14 @@ img {
   {% endif %}
 
   {% if slide.id == 2 %}
-  <h2>Flip those jars!</h2>
+  <h2>{{ slide.heading }}</h2>
   <img src="https://www.shutterstock.com/image-vector/hand-drawn-mason-jar-contour-600nw-1049331473.jpg" alt="Jar" />
   <img src="https://www.shutterstock.com/image-vector/hand-drawn-mason-jar-contour-600nw-1049331473.jpg" alt="Jar" />
   <img src="https://www.shutterstock.com/image-vector/hand-drawn-mason-jar-contour-600nw-1049331473.jpg" alt="Jar" /><br><br><br><br><br>
   {% endif %}
 
   {% if slide.id == 3 %}
-  <h2>Select...what are some fruits and vegetables that can be pickled?</h2>
+  <h2>{{ slide.heading }}</h2>
 <label>
   <input name="ans1" type="checkbox" class="answer" />
   <img src="https://blog.lexmed.com/images/librariesprovider80/blog-post-featured-images/shutterstock_1933299218.jpg?sfvrsn=4a8d900b_0" alt="Cherries"/>
@@ -90,12 +90,12 @@ img {
   {% endif %}
 
   {% if slide.id == 4 %}
-  <h2>Let’s prepare our vegetables to be pickled.
+  <h2>{{ slide.heading }}</h2>
     Drag and drop to separate the carrot into 5 pieces!</h2>
   {% endif %}
 
   {% if slide.id == 5 %}
-  <h2>Hit each check mark to verify you’ve got it!</h2>
+  <h2>{{ slide.heading }}</h2>
   <img src="https://www.webstaurantstore.com/images/products/large/592230/2454581.jpg" alt="Jar" /><br><br>
   <input type="checkbox" id="option1" name="option1" value="Bike">
   <label for="option1"> 1 tbsp garlic</label><br>
@@ -106,7 +106,7 @@ img {
   {% endif %}
 
   {% if slide.id == 6 %}
-  <h2>Predict … how many sliced cucumbers can fit inside this jar?</h2>
+  <h2>{{ slide.heading }}</h2>
   <form>
     <label for="prediction">Enter Prediction Here:</label><br>
     <input type="text" id="prediction" name="prediction"><br>
@@ -114,7 +114,7 @@ img {
   {% endif %}
 
   {% if slide.id == 7 %}
-  <h2>Pick the fallacy about boiling water…</h2>
+  <h2>{{ slide.heading }}</h2>
   <form>
     <input type="radio" id="ans1" name="fal" value="ans1">
     <label for="ans1">Boiling water always reaches a temperature of exactly 100 degrees Celsius at sea level.</label><br>
@@ -126,22 +126,22 @@ img {
   {% endif %}
 
   {% if slide.id == 8 %}
-  <h2>Watch this video…</h2>
+  <h2>{{ slide.heading }}</h2>
   {% endif %}
 
   {% if slide.id == 9 %}
-  <h2>Click to view each part!</h2>
+  <h2>{{ slide.heading }}</h2>
   [Create a series of gif’s of us sealing the jar.]<br><br>
   {% endif %}
 
   {% if slide.id == 10 %}
-  <h2>Remove the air bubbles!</h2>
+  <h2>{{ slide.heading }}</h2>
   Click to remove the air bubbles. **need to edit pic <br>
   <img src="https://img.freepik.com/premium-vector/blue-flat-air-bubbles-soap-bubbles-outline-water_760231-588.jpg" alt="Bubbles" />
   {% endif %}
 
   {% if slide.id == 11 %}
-  <h2>Where should you store your mix?</h2>
+  <h2>{{ slide.heading }}</h2>
   <label>
     <input name="ans1" type="radio" class="answer" />
     <img src="https://dijf55il5e0d1.cloudfront.net/images/rr/4/2/8/42835_1000.jpg" alt="Counter"/>
