@@ -4,7 +4,7 @@
 
 <script>
     let slide = {{ slide | tojson | safe }};
-    console.log(slide)
+    console.log(slide);
 </script>
 
 <!DOCTYPE html>
@@ -27,7 +27,9 @@
       {% endif %}
     </div>
   </form>
-  <button id="next_quiz">Next</button>
+  <button id="submit_quiz">Submit</button>
+  <p id="result" style="display:none;"></p>
+  <button id="next_quiz" style="display:none;">Next</button>
 
   <script src="../static/quiz.js"></script>
 </body>
