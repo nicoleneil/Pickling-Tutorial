@@ -27,7 +27,13 @@ learn_data = [
     {
         "id": 3,
         "instruction": "Pick what you'd like to pickle.",
-        "heading": "Select...what are some fruits and vegetables that can be pickled?"
+        "heading": "Select...what are some fruits and vegetables that can be pickled?",
+        "cherries": "https://blog.lexmed.com/images/librariesprovider80/blog-post-featured-images/shutterstock_1933299218.jpg?sfvrsn=4a8d900b_0",
+        "greenbeans": "https://images.everydayhealth.com/images/diet-nutrition/potential-health-benefits-of-green-beans-1440x810.jpg",
+        "mushrooms": "https://www.southernliving.com/thmb/FaJ64cufLIteCkTYUDwb2unePnY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/2612501_cooki_mushrooms_shiitake_096-1-4b8dd16a56be44768ed1468cebfc3a9e.jpg",
+        "bellpeppers": "https://www.thespruceeats.com/thmb/KREtRDgPBBevtf_YaN3oavhGQFU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/what-are-bell-peppers-5216131-still-life-9960d1febfd64dde9de5134dc184529e.jpg",
+        "strawberries": "https://www.simplyrecipes.com/thmb/vUSYpxhcP3yGIy3BpxxrLr5_t1g=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Strawberry-Guide-LEAD-02-9a5546836ac948e9b42e5d650918a21c.jpg",
+        "tomatoes": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Tomato_je.jpg/1200px-Tomato_je.jpg"
     },
     {
         "id": 4,

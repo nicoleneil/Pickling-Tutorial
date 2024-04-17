@@ -57,32 +57,32 @@ img {
   {% if slide.id == 3 %}
 <label>
   <input name="ans1" type="checkbox" class="answer" />
-  <img src="https://blog.lexmed.com/images/librariesprovider80/blog-post-featured-images/shutterstock_1933299218.jpg?sfvrsn=4a8d900b_0" alt="Cherries"/>
+  <img src="{{ slide.cherries }}" alt="Cherries"/>
   <figcaption>Cherries</figcaption>
 </label>
 <label>
   <input name="ans2" type="checkbox" class="answer" />
-  <img src="https://images.everydayhealth.com/images/diet-nutrition/potential-health-benefits-of-green-beans-1440x810.jpg" alt="Green Beans" />
+  <img src="{{ slide.greenbeans }}" alt="Green Beans" />
   <figcaption>Green Beans</figcaption>
 </label>
 <label>
   <input name="ans3" type="checkbox" class="answer" />
-  <img src="https://www.southernliving.com/thmb/FaJ64cufLIteCkTYUDwb2unePnY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/2612501_cooki_mushrooms_shiitake_096-1-4b8dd16a56be44768ed1468cebfc3a9e.jpg" alt="Mushrooms" />
+  <img src="{{ slide.mushrooms }}" alt="Mushrooms" />
   <figcaption>Mushrooms</figcaption>
 </label>
 <label>
   <input name="ans4" type="checkbox" class="answer" />
-  <img src="https://www.thespruceeats.com/thmb/KREtRDgPBBevtf_YaN3oavhGQFU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/what-are-bell-peppers-5216131-still-life-9960d1febfd64dde9de5134dc184529e.jpg" alt="Bell Peppers"/>
+  <img src="{{ slide.bellpeppers }}" alt="Bell Peppers"/>
   <figcaption>Bell Peppers</figcaption>
 </label>
 <label>
   <input name="ans5" type="checkbox" class="answer" />
-  <img src="https://www.simplyrecipes.com/thmb/vUSYpxhcP3yGIy3BpxxrLr5_t1g=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Strawberry-Guide-LEAD-02-9a5546836ac948e9b42e5d650918a21c.jpg" alt="Strawberries" />
+  <img src="{{ slide.strawberries }}" alt="Strawberries" />
   <figcaption>Strawberries</figcaption>
 </label>
 <label>
   <input name="ans6" type="checkbox" class="answer" />
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Tomato_je.jpg/1200px-Tomato_je.jpg" alt="Tomatoes" />
+  <img src="{{ slide.tomatoes }}" alt="Tomatoes" />
   <figcaption>Tomatoes</figcaption>
 </label><br><br>
   {% endif %}
