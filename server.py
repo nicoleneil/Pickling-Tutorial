@@ -13,7 +13,10 @@ learn_data = [
     {
         "id": 1,
         "instruction": "Let's begin assembling our materials.",
-        "heading": "Guess! Which of these do we need?"
+        "heading": "Guess! Which of these do we need?",
+        "milk": "https://images.immediate.co.uk/production/volatile/sites/30/2020/02/Glass-and-bottle-of-milk-fe0997a.jpg?resize=768,574",
+        "dill": "https://www.eatingwell.com/thmb/JpO2j5YTFLxFT_oQ2XtFPsbAOcE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/dill-ac021c11b2dc41ac83b809819617f042.jpg",
+        "alcohol": "https://i5.walmartimages.com/seo/Jagermeister-Herbal-Liqueur-750-ml-Bottle-35-ABV_fa58bf1e-4919-43a3-aa2f-765d9b4ac8d3.be19a28334a592aaa7705eddd3440664.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
     },
     {
         "id": 2,
