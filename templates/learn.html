@@ -12,13 +12,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Some Top Players</title>
+  <title>The Pickler's Paradise</title>
 
 </head>
 
 <body>
-  <h1>{{ slide.instruction}}</h1>
+  <h1>{{ slide.instruction }}</h1>
+  
+  {% if slide.id == 1 %}
+    <h2>Guess! Which of these do we need?</h2>
+    <form id="step1">
+      <input type="radio" id="option_a" name="answer" value="A">
+      <label for="option_a">Milk</label><br>
+      <input type="radio" id="option_b" name="answer" value="B">
+      <label for="option_b">Dill</label><br>
+      <input type="radio" id="option_c" name="answer" value="C">
+      <label for="option_c">Alcohol</label><br>
+      <button type="button" id="submit_quiz">Submit Answer</button><br><br>
+    </form>
+    <div id="quiz_feedback"></div>
+  {% endif %}
+
   <button id="next_learn">Click to begin or move onto next step.</button>
+
 
   <script src="../static/learn.js"></script>
 
