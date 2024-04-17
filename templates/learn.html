@@ -113,6 +113,52 @@ img {
     </form>
   {% endif %}
 
+  {% if slide.id == 7 %}
+  <h2>Pick the fallacy about boiling water…</h2>
+  <form>
+    <input type="radio" id="ans1" name="fal" value="ans1">
+    <label for="ans1">Boiling water always reaches a temperature of exactly 100 degrees Celsius at sea level.</label><br>
+    <input type="radio" id="ans2" name="fal" value="ans2">
+    <label for="ans2">Boiling water can be used to kill most bacteria and other pathogens present in it.</label><br>
+    <input type="radio" id="javascript" name="fal" value="ans3">
+    <label for="ans3">Water boils faster when salt is added to it.</label>
+  </form><br>
+  {% endif %}
+
+  {% if slide.id == 8 %}
+  <h2>Watch this video…</h2>
+  {% endif %}
+
+  {% if slide.id == 9 %}
+  <h2>Click to view each part!</h2>
+  [Create a series of gif’s of us sealing the jar.]<br><br>
+  {% endif %}
+
+  {% if slide.id == 10 %}
+  <h2>Remove the air bubbles!</h2>
+  Click to remove the air bubbles. **need to edit pic <br>
+  <img src="https://img.freepik.com/premium-vector/blue-flat-air-bubbles-soap-bubbles-outline-water_760231-588.jpg" alt="Bubbles" />
+  {% endif %}
+
+  {% if slide.id == 11 %}
+  <h2>Where should you store your mix?</h2>
+  <label>
+    <input name="ans1" type="radio" class="answer" />
+    <img src="https://dijf55il5e0d1.cloudfront.net/images/rr/4/2/8/42835_1000.jpg" alt="Counter"/>
+    <figcaption>Counter</figcaption>
+  </label>
+  <label>
+    <input name="ans2" type="radio" class="answer" />
+    <img src="https://m.media-amazon.com/images/I/51llsc7MClL.jpg" alt="Fridge" />
+    <figcaption>Fridge</figcaption>
+  </label>
+  <label>
+    <input name="ans3" type="radio" class="answer" />
+    <img src="https://southviewdesign.com/assets/components/phpthumbof/cache/watch_the_game_outside.bf7f96f6ba58290eb16bcfa12ee69ce6.jpg" alt="Outside" />
+    <figcaption>Outside</figcaption>
+  </label><br><br>
+  {% endif %}
+
   <button id="next_learn">Click to begin or move onto next step.</button>
 
 
