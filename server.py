@@ -73,23 +73,31 @@ learn_data = [
 quiz_data = [
     {
         "id": 0,
-        "question": "This is the start state."
+        "qnum": "1",
+        "question": "Ultimately, the process of pickling is done as a food ___________ method.",
+        "options": ["Preservation", "Enhancement", "Flavoring", "Sanitation"],
+        "answer": "Preservation"
     },
     {
         "id": 1,
-        "question": "Ultimately, the process of pickling is done as a food ___________________ method."
+        "qnum": "2",
+        "question": "What is brine?",
+        "options": ["Sugary water", "Salty water", "Sauce", "A type of vinegar"],
+        "answer": "Salty water"
     },
     {
         "id": 2,
-        "question": "What is brine?"
+        "qnum": "3",
+        "question": "What is the best way to store canned/pickled food items?",
+        "options": ["In a cool space, with natural sunlight.", "In a warm and damp place", "In a cool, dry, dark place", "In high humidity"],
+        "answer": "In a cool, dry, dark place"
     },
     {
         "id": 3,
-        "question": "What is the best way to store canned/pickled food items?"
-    },
-    {
-        "id": 4,
-        "question": "Why is oxygen bad when pickling cucumbers?"
+        "qnum": "4",
+        "question": "Why is oxygen bad when pickling cucumbers?",
+        "options": ["It allows spoilage microbes to grow.", "It affects the crunchiness of the pickles.", "It makes the pickles too sour.", "It will cause the pickles to ferment too quickly."],
+        "answer": "It allows spoilage microbes to grow."
     }
 ]
 
@@ -129,7 +137,3 @@ def quiz():
 
 if __name__ == '__main__':
    app.run(debug = True)
-
-
-       
-
