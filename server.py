@@ -21,7 +21,8 @@ learn_data = [
     {
         "id": 2,
         "instruction": "Prepare the jars. Wash and dry.",
-        "heading": "Flip those jars!"
+        "heading": "Flip those jars!",
+        "jar": "https://www.shutterstock.com/image-vector/hand-drawn-mason-jar-contour-600nw-1049331473.jpg"
     },
     {
         "id": 3,
