@@ -14,7 +14,6 @@ img {
 
 <script>
     let slide = {{ slide | tojson | safe }};
-    console.log(slide)
 </script>
 
 <!DOCTYPE html>
@@ -121,24 +120,33 @@ img {
   {% endif %}
 
   {% if slide.id == 4 %}
-    Drag and drop to separate the carrot into 5 pieces!</h2>
+
+      <div id="container_carrot">
+        <img id="clickableImage_carrot" src="{{ slide.carrot }}" alt="Clickable Image">
+      </div>
+  </div>
+  
+
   {% endif %}
 
   {% if slide.id == 5 %}
-  <img src="{{ slide.jar }}" alt="Jar" />
-  <input type="checkbox" id="option1" name="option1" value="Bike">
-  <label for="option1"> 1 tbsp garlic</label><br>
-  <input type="checkbox" id="option2" name="option2" value="Car">
-  <label for="option2"> 1 tbsp sugar</label><br>
-  <input type="checkbox" id="option3" name="option3" value="Boat">
-  <label for="option3"> 1 tbsp sugar</label><br><br>
+  <div class="learn-slide-5">
+    <input type="checkbox" id="option1" name="option1" value="Bike">
+    <label for="option1">1 tbsp garlic</label><br>
+    <input type="checkbox" id="option2" name="option2" value="Car">
+    <label for="option2">1 tbsp sugar</label><br>
+    <input type="checkbox" id="option3" name="option3" value="Boat">
+    <label for="option3">1 tbsp sugar</label><br><br>
+  </div>
   {% endif %}
 
   {% if slide.id == 6 %}
+  <div class="learn-slide-5">
   <form>
     <label for="prediction">Enter Prediction Here:</label><br>
     <input type="text" id="prediction" name="prediction"><br>
     </form>
+  </div>
   {% endif %}
 
   {% if slide.id == 7 %}

@@ -38,7 +38,8 @@ learn_data = [
     {
         "id": 4,
         "instruction": "Prepare the vegetables by cutting or peeling them in whatever shapes and sizes you prefer.",
-        "heading": "Let’s prepare our vegetables to be pickled. Drag and drop to separate the carrot into 5 pieces!"
+        "heading": "Let’s prepare our vegetables to be pickled. Drag and drop to separate the carrot into 5 pieces!",
+        "carrot": "https://upload.wikimedia.org/wikipedia/commons/2/23/Carrot_clip_art.png"
     },
     {
         "id": 5,
