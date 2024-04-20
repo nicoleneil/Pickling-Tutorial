@@ -119,12 +119,21 @@
   }
 
   #submit_quiz {
-    background-color: #b3e6b3;
+    background-color: #d1f1d1; /* Pale green background color */
+    color: #333; /* Text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none; /* Remove border */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Add pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
     margin-top: 20px;
+  }
+  
+  #submit_quiz:hover {
+    background-color: #b3e6b3; /* Darker green on hover */
   }
 
   
-
   
   
   
