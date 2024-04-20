@@ -27,31 +27,46 @@ img {
 </head>
 
 <body>
-  <h1>{{ slide.instruction }}</h1>
-  <h2>{{ slide.heading }}</h2>
+    <div class="heading-box">
+        <h1>{{ slide.instruction }}</h1>
+        <h2>{{ slide.heading }}</h2>
+      </div>
+    
+    {% if slide.id == 1 %}
+    <div class="learn-slide-1">
+      <div class="options">
+        <label class="option">
+          <input name="ans1" type="checkbox" class="answer" />
+          <div class="image-container">
+            <img src="{{ slide.milk }}" alt="Milk"/>
+          </div>
+          <figcaption>Milk</figcaption>
+        </label>
+        <label class="option">
+          <input name="ans2" type="checkbox" class="answer" />
+          <div class="image-container">
+            <img src="{{ slide.dill }}" alt="Dill" />
+          </div>
+          <figcaption>Dill</figcaption>
+        </label>
+        <label class="option">
+          <input name="ans3" type="checkbox" class="answer" />
+          <div class="image-container">
+            <img src="{{ slide.alcohol }}" alt="Alcohol Bottle" />
+          </div>
+          <figcaption>Alcohol</figcaption>
+        </label>
+      </div>
+    </div>
+    
   
-  {% if slide.id == 1 %}
-  <label>
-    <input name="ans1" type="radio" class="answer" />
-    <img src="{{ slide.milk }}" alt="Milk"/>
-    <figcaption>Milk</figcaption>
-  </label>
-  <label>
-    <input name="ans2" type="radio" class="answer" />
-    <img src="{{ slide.dill }}" alt="Dill" />
-    <figcaption>Dill</figcaption>
-  </label>
-  <label>
-    <input name="ans3" type="radio" class="answer" />
-    <img src="{{ slide.alcohol }}" alt="Alcohol Bottle" />
-    <figcaption>Alcohol</figcaption>
-  </label><br><br>
   {% endif %}
+  
 
   {% if slide.id == 2 %}
-  <img src="{{ slide.jar }}" alt="Jar" />
-  <img src="{{ slide.jar }}" alt="Jar" />
-  <img src="{{ slide.jar }}" alt="Jar" /><br><br><br><br><br>
+  <img src="{{ slide.jar }}" alt="Jar 1" class="spin-image" id="jar1">
+  <img src="{{ slide.jar }}" alt="Jar 2" class="spin-image" id="jar2">
+  <img src="{{ slide.jar }}" alt="Jar 3" class="spin-image" id="jar3"><br><br><br><br><br>
   {% endif %}
 
   {% if slide.id == 3 %}

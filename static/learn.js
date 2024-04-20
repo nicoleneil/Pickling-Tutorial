@@ -12,3 +12,12 @@ document.getElementById("next_learn").addEventListener("click", function() {
     console.log(nextNumber)
     window.location.href = "http://127.0.0.1:5000/learn/" + nextNumber;
 });
+
+const jars = document.querySelectorAll('.spin-image');
+jars.forEach(jar => {
+    jar.addEventListener('click', () => {
+        jar.classList.add('spin-animation');
+        jar.removeEventListener('click', handleClick);
+    });
+});
+
