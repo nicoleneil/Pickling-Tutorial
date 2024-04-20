@@ -70,36 +70,54 @@ img {
   {% endif %}
 
   {% if slide.id == 3 %}
-<label>
-  <input name="ans1" type="checkbox" class="answer" />
-  <img src="{{ slide.cherries }}" alt="Cherries"/>
-  <figcaption>Cherries</figcaption>
-</label>
-<label>
-  <input name="ans2" type="checkbox" class="answer" />
-  <img src="{{ slide.greenbeans }}" alt="Green Beans" />
-  <figcaption>Green Beans</figcaption>
-</label>
-<label>
-  <input name="ans3" type="checkbox" class="answer" />
-  <img src="{{ slide.mushrooms }}" alt="Mushrooms" />
-  <figcaption>Mushrooms</figcaption>
-</label>
-<label>
-  <input name="ans4" type="checkbox" class="answer" />
-  <img src="{{ slide.bellpeppers }}" alt="Bell Peppers"/>
-  <figcaption>Bell Peppers</figcaption>
-</label>
-<label>
-  <input name="ans5" type="checkbox" class="answer" />
-  <img src="{{ slide.strawberries }}" alt="Strawberries" />
-  <figcaption>Strawberries</figcaption>
-</label>
-<label>
-  <input name="ans6" type="checkbox" class="answer" />
-  <img src="{{ slide.tomatoes }}" alt="Tomatoes" />
-  <figcaption>Tomatoes</figcaption>
-</label><br><br>
+
+  <div class="learn-slide-1">
+    <div class="options">
+      <label class="option">
+        <input name="ans1" type="checkbox" class="answer" />
+        <div class="image-container">
+          <img src="{{ slide.cherries }}" alt="Cherries"/>
+        </div>
+        <figcaption>Cherries</figcaption>
+      </label>
+      <label class="option">
+        <input name="ans2" type="checkbox" class="answer" />
+        <div class="image-container">
+          <img src="{{ slide.greenbeans }}" alt="Green Beans" />
+        </div>
+        <figcaption>Green Beans</figcaption>
+      </label>
+      <label class="option">
+        <input name="ans3" type="checkbox" class="answer" />
+        <div class="image-container">
+          <img src="{{ slide.mushrooms }}" alt="Mushrooms" />
+        </div>
+        <figcaption>Mushrooms</figcaption>
+      </label>
+      <label class="option">
+        <input name="ans4" type="checkbox" class="answer" />
+        <div class="image-container">
+          <img src="{{ slide.bellpeppers }}" alt="Bell Peppers"/>
+        </div>
+        <figcaption>Bell Peppers</figcaption>
+      </label>
+      <label class="option">
+        <input name="ans5" type="checkbox" class="answer" />
+        <div class="image-container">
+          <img src="{{ slide.strawberries }}" alt="Strawberries" />
+        </div>
+        <figcaption>Strawberries</figcaption>
+      </label>
+      <label class="option">
+        <input name="ans6" type="checkbox" class="answer" />
+        <div class="image-container">
+          <img src="{{ slide.tomatoes }}" alt="Tomatoes" />
+        </div>
+        <figcaption>Tomatoes</figcaption>
+      </label>
+    </div>
+  </div>
+  
   {% endif %}
 
   {% if slide.id == 4 %}
@@ -147,21 +165,31 @@ img {
   {% endif %}
 
   {% if slide.id == 11 %}
-  <label>
-    <input name="ans1" type="radio" class="answer" />
-    <img src="{{ slide.counter }}" alt="Counter"/>
-    <figcaption>Counter</figcaption>
-  </label>
-  <label>
-    <input name="ans2" type="radio" class="answer" />
-    <img src="{{ slide.fridge }}" alt="Fridge" />
-    <figcaption>Fridge</figcaption>
-  </label>
-  <label>
-    <input name="ans3" type="radio" class="answer" />
-    <img src="{{ slide.outside }}" alt="Outside" />
-    <figcaption>Outside</figcaption>
-  </label><br><br>
+  <div class="learn-slide-1">
+    <div class="options">
+      <label class="option">
+        <input name="ans1" type="checkbox" class="answer" />
+        <div class="image-container">
+          <img src="{{ slide.counter }}" alt="Counter"/>
+        </div>
+        <figcaption>Counter</figcaption>
+      </label>
+      <label class="option">
+        <input name="ans2" type="checkbox" class="answer" />
+        <div class="image-container">
+          <img src="{{ slide.fridge }}" alt="Fridge" />
+        </div>
+        <figcaption>Fridge</figcaption>
+      </label>
+      <label class="option">
+        <input name="ans3" type="checkbox" class="answer" />
+        <div class="image-container">
+          <img src="{{ slide.outside }}" alt="Outside" />
+        </div>
+        <figcaption>Outside</figcaption>
+      </label>
+    </div>
+  </div>
   {% endif %}
 
   <button id="next_learn">Click to begin or move onto next step.</button>
