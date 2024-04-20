@@ -17,9 +17,12 @@
 </head>
 
 <body>
-  <h1>{{ slide.qnum }}. {{ slide.question }}</h1>
+    <div class="heading-box">
+        <h1>{{ slide.qnum }}. {{ slide.question }}</h1>
+    </div>
+  
   <form id="quiz-form">
-    <div id="options-container">
+    <div class="quiz-box-options">
       {% if slide.options %}
         {% for option in slide.options %}
           <label><input type="radio" name="option" value="{{ option }}">  {{ option }}</label><br>
