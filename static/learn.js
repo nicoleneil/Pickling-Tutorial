@@ -14,14 +14,21 @@ document.getElementById("next_learn").addEventListener("click", function() {
 });
 
 const jars = document.querySelectorAll('.spin-image');
+
 jars.forEach(jar => {
-    jar.addEventListener('click', () => {
-        jar.classList.add('spin-animation');
-        jar.removeEventListener('click', handleClick);
-    });
+    jar.addEventListener('click', handleClick);
 });
 
+function handleClick() {
+    const jar = this;
+    jar.classList.add('spin-animation');
+    jar.removeEventListener('click', handleClick);
 
-
-
-
+    // Show check mark after animation completes
+    setTimeout(() => {
+        const checkMark = jar.nextElementSibling;
+        if (checkMark && checkMark.classList.contains('check-mark')) {
+            checkMark.style.display = 'inline';
+        }
+    }, 1000); // Adjust the timing based on your animation duration
+}
