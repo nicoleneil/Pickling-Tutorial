@@ -5,7 +5,7 @@ document.getElementById("submit_quiz").addEventListener("click", function() {
         return;
     }
     const selectedValue = selectedOption.value;
-    const answer = "{{ slide.answer }}";
+    const answer = document.getElementById("result").getAttribute("data-answer");
 
     const resultContainer = document.getElementById("result");
     if (selectedValue === answer) {
