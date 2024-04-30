@@ -1,0 +1,173 @@
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+/* Apply the animation to the image */
+.spin-animation {
+    animation: spin 1s linear forwards;
+}
+
+/* Style the image container */
+.image-container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.check-mark {
+    display: none; /* Initially hide the check mark */
+  }
+
+.heading-box {
+    margin-top: 20px; /* Adjust margin from the top */
+    background-color: #d1f1d1; /* Pale green background color */
+    padding: 20px; /* Adjust padding as needed */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 20px; /* Adjust margin between headings and options */
+  }
+
+  #next_learn {
+    background-color: #d1f1d1; /* Pale green background color */
+    color: #333; /* Text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none; /* Remove border */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Add pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    margin-top: 20px;
+  }
+  
+  #next_learn:hover {
+    background-color: #b3e6b3; /* Darker green on hover */
+  }
+
+.learn-slide-1 {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .learn-slide-1 .options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .learn-slide-1 .options {
+    display: flex;
+    justify-content: flex-start; /* Align options to the left */
+    gap: 20px;
+  }
+  
+  
+  .learn-slide-1 .option .image-container {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .learn-slide-1 .option .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .learn-slide-1 figcaption {
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .learn-slide-1 .option input[type="checkbox"] {
+    display: none;
+  }
+
+  
+  .learn-slide-1 .option input[name="ans2"]:checked + .image-container {
+    border: 2px solid #3498db;
+  }
+  
+  .learn-slide-1 .option input[name="ans2"]:checked + .image-container + figcaption::after {
+    content: '\2714'; /* Unicode for check mark */
+    color: green;
+    margin-left: 5px;
+    font-size: 18px; /* Adjust the size if needed */
+    vertical-align: middle;
+  }
+  
+  /* CSS for the red X */
+  .learn-slide-1 .option input[name="ans1"]:checked + .image-container {
+    border: 2px solid red;
+  }
+  
+  .learn-slide-1 .option input[name="ans1"]:checked + .image-container + figcaption::after {
+    content: '\2716'; /* Unicode for X mark */
+    color: red;
+    margin-left: 5px;
+    font-size: 18px; /* Adjust the size if needed */
+    vertical-align: middle;
+  }
+  
+  .learn-slide-1 .option input[name="ans3"]:checked + .image-container {
+    border: 2px solid red;
+  }
+  
+  .learn-slide-1 .option input[name="ans3"]:checked + .image-container + figcaption::after {
+    content: '\2716'; /* Unicode for X mark */
+    color: red;
+    margin-left: 5px;
+    font-size: 18px; /* Adjust the size if needed */
+    vertical-align: middle;
+  }
+
+  .learn-slide-5 {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 25px;
+  }
+
+  .quiz-box-options {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 25px;
+  }
+
+  #next_quiz {
+    background-color: #d1f1d1; /* Pale green background color */
+    color: #333; /* Text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none; /* Remove border */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Add pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    margin-top: 20px;
+  }
+  
+  #next_quiz:hover {
+    background-color: #b3e6b3; /* Darker green on hover */
+  }
+
+  #submit_quiz {
+    background-color: #d1f1d1; /* Pale green background color */
+    color: #333; /* Text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none; /* Remove border */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Add pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    margin-top: 20px;
+  }
+  
+  #submit_quiz:hover {
+    background-color: #b3e6b3; /* Darker green on hover */
+  }
