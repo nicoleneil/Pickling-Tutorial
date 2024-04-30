@@ -1,7 +1,10 @@
-from flask import Flask
+from flask import Flask, redirect, url_for
 from flask import render_template
 from flask import Response, request, jsonify
 app = Flask(__name__)
+
+user_score = 0
+answered_questions = set()
 
 temp = []
 learn_data = [
@@ -147,6 +150,41 @@ def quiz_slide(id=None):
 def quiz():
     slide = quiz_data[0]
     return render_template('quiz.html',slide=slide) 
+
+@app.route('/submit_quiz', methods=['POST'])
+def submit_quiz():
+    global user_score  # Access the global variable
+    selected_option = request.form.get('option')  # Get the selected option from the form
+    question_id = int(request.form.get('id'))  # Get the question id
+    correct_answer = quiz_data[question_id]['answer']  # Get the correct answer for the question
+
+    # Compare selected option with the correct answer
+    if selected_option == correct_answer:
+        user_score += 1  # Increment score if the answer is correct
+
+    answered_questions.add(question_id)
+
+    # Check if all questions are answered
+    if len(answered_questions) == len(quiz_data):
+        # Redirect to quiz_results page if all questions are answered
+        return redirect(url_for('quiz_results'))
+    else:
+        # Redirect to next question if not all questions are answered
+        next_question_id = question_id + 1
+        return redirect(url_for('quiz_slide', id=next_question_id))
+
+@app.route('/quiz_results')
+def quiz_results():
+    global user_score  # Access the global variable
+    # Pass the user's score to the template
+    return render_template('quiz_results.html', user_score=user_score)
+
+@app.route('/reset_quiz')
+def reset_quiz():
+    global user_score, answered_questions # Access the global variable
+    user_score = 0  # Reset the user's score
+    answered_questions.clear()  # Clear the set of answered questions
+    return redirect(url_for('quiz'))
 
 if __name__ == '__main__':
    app.run(debug = True)
