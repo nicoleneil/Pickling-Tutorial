@@ -72,7 +72,8 @@ body {
   <img src="{{ slide.jar }}" alt="Jar 2" class="spin-image" id="jar2">
   <span class="check-mark">&#10003;</span>
   <img src="{{ slide.jar }}" alt="Jar 3" class="spin-image" id="jar3">
-  <span class="check-mark">&#10003;</span><br><br><br><br><br>
+  <span class="check-mark">&#10003;</span>
+  <br><br>
   {% endif %}
 
   {% if slide.id == 3 %}
@@ -167,7 +168,7 @@ body {
   {% endif %}
 
   {% if slide.id == 8 %}
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/LBvr0K-6NIY?si=wjHuqOLG_PG4l562" 
+  <iframe width="560" height="315" src="{{ slide.video }}" 
   title="How To Make Pickles Without A Recipe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   <br>
   {% endif %}
