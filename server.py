@@ -63,7 +63,7 @@ learn_data = [
     {
         "id": 8,
         "instruction": "Create the brine.",
-        "heading": "Watch this video...",
+        "heading": "Watch this video!",
         "video": "https://www.youtube.com/embed/LBvr0K-6NIY?si=wjHuqOLG_PG4l562"
     },
     {
