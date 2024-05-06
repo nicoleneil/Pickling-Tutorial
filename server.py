@@ -24,13 +24,13 @@ learn_data = [
     {
         "id": 2,
         "instruction": "Prepare the jars. Wash and dry.",
-        "heading": "Flip those jars!",
+        "heading": "Click to flip those jars!",
         "jar": "https://www.webstaurantstore.com/images/products/large/592230/2454581.jpg"
     },
     {
         "id": 3,
         "instruction": "Pick what you'd like to pickle.",
-        "heading": "Select...what are some fruits and vegetables that can be pickled?",
+        "heading": "Which of these fruits and vegetables can be pickled?",
         "cherries": "https://blog.lexmed.com/images/librariesprovider80/blog-post-featured-images/shutterstock_1933299218.jpg?sfvrsn=4a8d900b_0",
         "greenbeans": "https://images.everydayhealth.com/images/diet-nutrition/potential-health-benefits-of-green-beans-1440x810.jpg",
         "mushrooms": "https://www.southernliving.com/thmb/FaJ64cufLIteCkTYUDwb2unePnY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/2612501_cooki_mushrooms_shiitake_096-1-4b8dd16a56be44768ed1468cebfc3a9e.jpg",
@@ -41,18 +41,18 @@ learn_data = [
     {
         "id": 4,
         "instruction": "Prepare the vegetables by cutting or peeling them in whatever shapes and sizes you prefer.",
-        "heading": "Let’s prepare our vegetables to be pickled. Drag and drop to separate the carrot into 5 pieces!",
+        "heading": "Drag and drop to separate the carrot into 5 pieces!",
         "carrot": "https://upload.wikimedia.org/wikipedia/commons/2/23/Carrot_clip_art.png"
     },
     {
         "id": 5,
-        "instruction": "Add the flavorings. Divide the herbs, spices, or garlic you are using between the jars.",
+        "instruction": "Choose your flavorings. Divide the herbs and spices you are using between the jars.",
         "heading": "Hit each check mark to verify you’ve got it!",
         "jar": "https://www.webstaurantstore.com/images/products/large/592230/2454581.jpg"
     },
     {
         "id": 6,
-        "instruction": "Add the vegetables to the jars. Be sure there is ½ inch of space from the rim to the tops of the vegetables. Pack them in without smashing.",
+        "instruction": "Pack the vegetables into the jars without smashing them. Leave ½ inch of space between the rim and the tops of the vegetables.",
         "heading": "Predict … how many sliced cucumbers can fit inside this jar?",
         "jarslice": "https://www.thefullhelping.com/wp-content/uploads/2023/06/pickled-cucumber-slices-6-1024x1536.jpg"
     },
@@ -74,7 +74,7 @@ learn_data = [
     },
     {
         "id": 10,
-        "instruction": "Remove air bubbles by tapping against the counter and adding more brine if necessary.",
+        "instruction": "Remove air bubbles by tapping the jar against the counter and adding more brine if necessary.",
         "heading": "Pop the air bubbles on the screen!",
     },
     {
