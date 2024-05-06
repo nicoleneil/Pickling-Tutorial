@@ -9,9 +9,11 @@
     <title>Quiz Results</title>
 </head>
 <body>
-    <h1>Your Quiz Score: {{ user_score }}/4</h1>
+    <div class="heading-box">
+        <h1>Your Quiz Score: {{ user_score }}/4</h1>
+    </div>
     <form action="/reset_quiz">
-        <button type="submit">Take the Quiz again</button>
+        <button id="reset_quiz" type="submit">Take the Quiz again</button>
     </form>
 </body>
 </html>
