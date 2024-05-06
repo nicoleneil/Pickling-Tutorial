@@ -4,6 +4,10 @@ document.getElementById("next_learn").addEventListener("click", function() {
     if (url == "http://127.0.0.1:5000/learn" || url == "http://127.0.0.1:5000/learn/") {
         var number = 1;
     }
+    else if (url  == "http://127.0.0.1:5000/learn/11" || number == 11) {
+        // Special case: When on the last learn page (slide.id == 11)
+        var number = 0;
+    }
     else {
         var number = parseInt(parts[parts.length - 1]); // Parse the number from the URL
     }
