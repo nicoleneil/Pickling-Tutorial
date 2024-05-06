@@ -155,10 +155,11 @@ body {
   {% if slide.id == 6 %}
   <div class="learn-slide-5">
     <img src="{{ slide.jarslice }}" alt="Jar of Sliced Cucumbers" />
-  <form>
-    <label for="prediction">Enter Prediction Here:</label><br>
-    <input type="text" id="prediction" name="prediction"><br>
+    <form id="guessForm">
+      <label for="prediction">Enter Prediction Here:</label><br>
+      <input type="text" id="prediction" name="prediction"><br>
     </form>
+    <p id="result"></p>
   </div>
   {% endif %}
 

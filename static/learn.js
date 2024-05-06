@@ -77,6 +77,8 @@ $(document).ready(function() {
   
   });
 
+  //slide 5 checkmarks
+
   var checkboxes = document.querySelectorAll('.learn-slide-5 input[type="checkbox"]');
   var checkmark = document.getElementById('checkmark');
 
@@ -97,4 +99,21 @@ $(document).ready(function() {
         checkmark.style.display = 'none';
       }
     });
+  });
+
+  // guessing the cucumber amount in the jar
+
+  document.getElementById('guessForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+    var prediction = parseInt(document.getElementById('prediction').value);
+    var resultText = document.getElementById('result');
+    var targetNumber = 36;
+
+    if (prediction === targetNumber) {
+      resultText.textContent = "Correct!";
+    } else if (prediction >= targetNumber - 10 && prediction <= targetNumber + 10) {
+      resultText.textContent = "Close! It's " + targetNumber + ".";
+    } else {
+      resultText.textContent = "Guess again.";
+    }
   });
