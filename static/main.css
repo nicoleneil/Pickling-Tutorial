@@ -59,7 +59,6 @@
     background-color: #b3e6b3; /* Darker green on hover */
   }
 
-
 .learn-slide-1 {
     padding: 20px;
     background-color: #f5f5f5;
@@ -78,7 +77,6 @@
     justify-content: flex-start; /* Align options to the left */
     gap: 20px;
   }
-  
   
   .learn-slide-1 .option .image-container {
     width: 200px;
@@ -104,7 +102,6 @@
     display: none;
   }
 
-  
   .learn-slide-1 .option input[name="ans2"]:checked + .image-container {
     border: 2px solid #3498db;
   }
@@ -224,19 +221,17 @@
     background-color: #b3e6b3; /* Darker green on hover */
   }
 
-  
-  
-  
-  
+  #reset_quiz {
+    background-color: #d1f1d1; /* Pale green background color */
+    color: #333; /* Text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none; /* Remove border */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Add pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    margin-top: 20px;
+  }
 
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+  #reset_quiz:hover {
+    background-color: #b3e6b3; /* Darker green on hover */
+  }
