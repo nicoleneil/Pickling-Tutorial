@@ -53,7 +53,8 @@ learn_data = [
     {
         "id": 6,
         "instruction": "Add the vegetables to the jars. Be sure there is ½ inch of space from the rim to the tops of the vegetables. Pack them in without smashing.",
-        "heading": "Predict … how many sliced cucumbers can fit inside this jar?"
+        "heading": "Predict … how many sliced cucumbers can fit inside this jar?",
+        "jarslice": "https://www.thefullhelping.com/wp-content/uploads/2023/06/pickled-cucumber-slices-6-1024x1536.jpg"
     },
     {
         "id": 7,
