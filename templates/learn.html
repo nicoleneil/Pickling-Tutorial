@@ -13,6 +13,7 @@ img {
 
 body {
   font-family: 'Bakbak One', sans-serif; 
+  cursor: pointer;
   }
 </style>
 
@@ -25,6 +26,9 @@ body {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <title>The Pickler's Paradise</title>
 
 </head>
@@ -178,8 +182,31 @@ body {
   {% endif %}
 
   {% if slide.id == 10 %}
-  Click to remove the air bubbles. **need to edit pic <br>
-  <img src="{{ slide.bubbles }}" alt="Bubbles" />
+  <div>
+  <div class="enclosure1">
+    <div class="bubble1">
+      <audio id="popper1"  preload="auto">
+        <source src="https://glotacosm.com/pop1.wav" type="audio/wav">
+      </audio>
+    </div>
+  </div>
+
+
+  <div class="enclosure2">
+    <div class="bubble2">
+      <audio id="popper2"  preload="auto">
+        <source src="https://glotacosm.com/pop2.wav" type="audio/wav">
+      </audio>
+    </div>
+  </div>
+
+  <div class="enclosure3">
+    <div class="bubble3">
+      <audio id="popper3"  preload="auto">
+        <source src="https://glotacosm.com/pop3.wav" type="audio/wav">
+      </audio>
+    </div>
+  </div>
   {% endif %}
 
   {% if slide.id == 11 %}

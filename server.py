@@ -74,8 +74,7 @@ learn_data = [
     {
         "id": 10,
         "instruction": "Remove air bubbles by tapping against the counter and adding more brine if necessary.",
-        "heading": "Remove the air bubbles!",
-        "bubbles": "https://img.freepik.com/premium-vector/blue-flat-air-bubbles-soap-bubbles-outline-water_760231-588.jpg"
+        "heading": "Pop the air bubbles on the screen!",
     },
     {
         "id": 11,
