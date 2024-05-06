@@ -76,3 +76,25 @@ $(document).ready(function() {
       bubbleMaker(3);
   
   });
+
+  var checkboxes = document.querySelectorAll('.learn-slide-5 input[type="checkbox"]');
+  var checkmark = document.getElementById('checkmark');
+
+  checkboxes.forEach(function(checkbox) {
+    checkbox.addEventListener('change', function() {
+      // Check if all checkboxes are checked
+      var allChecked = true;
+      checkboxes.forEach(function(cb) {
+        if (!cb.checked) {
+          allChecked = false;
+        }
+      });
+
+      // Display checkmark if all checkboxes are checked
+      if (allChecked) {
+        checkmark.style.display = 'inline';
+      } else {
+        checkmark.style.display = 'none';
+      }
+    });
+  });

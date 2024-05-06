@@ -35,7 +35,7 @@ body {
 
 <body>
     <div class="heading-box">
-        <h1>{{ slide.id }}. {{ slide.instruction }}</h1>
+        <h1>{{ slide.instruction }}</h1>
         <h2>{{ slide.heading }}</h2>
       </div>
     
@@ -65,7 +65,10 @@ body {
         </label>
       </div>
     </div>
+    
+  
   {% endif %}
+  
 
   {% if slide.id == 2 %}
   <img src="{{ slide.jar }}" alt="Jar 1" class="spin-image" id="jar1">
@@ -78,6 +81,7 @@ body {
   {% endif %}
 
   {% if slide.id == 3 %}
+
   <div class="learn-slide-1">
     <div class="options">
       <label class="option">
@@ -124,12 +128,16 @@ body {
       </label>
     </div>
   </div>
+  
   {% endif %}
 
   {% if slide.id == 4 %}
-  <div id="container_carrot">
-    <img id="clickableImage_carrot" src="{{ slide.carrot }}" alt="Clickable Image">
+
+      <div id="container_carrot">
+        <img id="clickableImage_carrot" src="{{ slide.carrot }}" alt="Clickable Image">
+      </div>
   </div>
+
   {% endif %}
 
   {% if slide.id == 5 %}
@@ -140,6 +148,7 @@ body {
     <label for="option2">1 tbsp sugar</label><br>
     <input type="checkbox" id="option3" name="option3" value="Boat">
     <label for="option3">1 tbsp red pepper flake</label><br>
+    <span id="checkmark" style="display: none; color: green;">&#10004;</span>
   </div>
   {% endif %}
 
@@ -183,6 +192,7 @@ body {
       </audio>
     </div>
   </div>
+
 
   <div class="enclosure2">
     <div class="bubble2">
@@ -229,8 +239,8 @@ body {
   </div>
   {% endif %}
 
-  <button id="prev_learn" {% if slide.id == 1 %} style="display: none;"{% endif %}>Previous Step</button>
-  <button id="next_learn">{% if slide.id == 11 %}Learn From Step 1 Again{% else %}Next Step{% endif %}</button>
+  <button id="prev_learn" {% if slide.id == 1 %} style="display: none;"{% endif %}>Previous step</button>
+  <button id="next_learn">{% if slide.id == 11 %}Learn from Step 1 again{% else %}Next step{% endif %}</button>
 
   <script src="../static/learn.js"></script>
 
