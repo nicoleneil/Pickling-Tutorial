@@ -164,14 +164,17 @@ body {
   {% endif %}
 
   {% if slide.id == 7 %}
-  <form>
+  <form id="quizForm">
     <input type="radio" id="ans1" name="fal" value="ans1">
     <label for="ans1">Boiling water always reaches a temperature of exactly 100 degrees Celsius at sea level.</label><br>
     <input type="radio" id="ans2" name="fal" value="ans2">
     <label for="ans2">Boiling water can be used to kill most bacteria and other pathogens present in it.</label><br>
-    <input type="radio" id="javascript" name="fal" value="ans3">
-    <label for="ans3">Water does not boil faster when salt is added to it.</label>
-  </form><br>
+    <input type="radio" id="ans3" name="fal" value="ans3">
+    <label for="ans3">Water does not boil faster when salt is added to it.</label><br>
+    <button type="submit">Submit</button>
+    <label id="resultLabel">Blah</label>
+  </form>
+  
   {% endif %}
 
   {% if slide.id == 8 %}

@@ -103,17 +103,49 @@ $(document).ready(function() {
 
   // guessing the cucumber amount in the jar
 
-  document.getElementById('guessForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent form submission
-    var prediction = parseInt(document.getElementById('prediction').value);
-    var resultText = document.getElementById('result');
-    var targetNumber = 36;
+  // Add an event listener for the guessForm
+var guessForm = document.getElementById('guessForm');
+if(guessForm) {
+    guessForm.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+        var prediction = parseInt(document.getElementById('prediction').value);
+        var resultText = document.getElementById('result');
+        var targetNumber = 36;
 
-    if (prediction === targetNumber) {
-      resultText.textContent = "Correct!";
-    } else if (prediction >= targetNumber - 10 && prediction <= targetNumber + 10) {
-      resultText.textContent = "Close! It's " + targetNumber + ".";
-    } else {
-      resultText.textContent = "Guess again.";
-    }
-  });
+        if (prediction === targetNumber) {
+            resultText.textContent = "Correct!";
+        } else if (prediction >= targetNumber - 10 && prediction <= targetNumber + 10) {
+            resultText.textContent = "Close! It's " + targetNumber + ".";
+        } else {
+            resultText.textContent = "Guess again.";
+        }
+    });
+}
+
+// Add an event listener for the quizForm
+var quizForm = document.getElementById("quizForm");
+if(quizForm) {
+    quizForm.addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent the default form submission behavior
+        
+        // Get the value of the selected radio button
+        var selectedOption = document.querySelector('input[name="fal"]:checked');
+        
+        // Check if any option is selected
+        if (selectedOption) {
+            // Get the value of the selected option
+            selectedOption = selectedOption.value;
+            
+            // Check if the selected option is the third option (value="ans3")
+            if (selectedOption === "ans3") {
+                document.getElementById("resultLabel").textContent = "Correct";
+            } else {
+                document.getElementById("resultLabel").textContent = "False";
+            }
+        } else {
+            // Handle case when no option is selected
+            console.log("Please select an option.");
+        }
+    });
+}
+
