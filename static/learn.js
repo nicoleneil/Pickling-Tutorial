@@ -149,3 +149,35 @@ if(quizForm) {
     });
 }
 
+var carrot = document.getElementById('carrot');
+var carrotPiecesContainer = document.getElementById('carrotPieces');
+var checkmark = document.getElementById('checkmark');
+var numClicks = 0;
+var pieceWidth;
+
+carrot.addEventListener('click', separateCarrot);
+
+function separateCarrot() {
+    numClicks++;
+    if (numClicks <= 5) {
+        // Calculate width of each piece
+        pieceWidth = carrot.width / 5;
+
+        // Create and append the new piece
+        var piece = document.createElement('div');
+        piece.className = 'carrot-piece';
+        piece.style.width = pieceWidth + 'px';
+        piece.style.height = carrot.height + 'px';
+        piece.style.backgroundImage = `url(${carrot.src})`;
+        piece.style.backgroundPosition = `-${(numClicks - 1) * pieceWidth}px 0`;
+        carrotPiecesContainer.appendChild(piece);
+
+        // Display checkmark if 5 clicks reached
+        if (numClicks === 5) {
+            checkmark.style.display = 'inline';
+        }
+    }
+}
+
+
+

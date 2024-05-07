@@ -41,8 +41,8 @@ learn_data = [
     {
         "id": 4,
         "instruction": "Prepare the vegetables by cutting or peeling them in whatever shapes and sizes you prefer.",
-        "heading": "Drag and drop to separate the carrot into 5 pieces!",
-        "carrot": "https://upload.wikimedia.org/wikipedia/commons/2/23/Carrot_clip_art.png"
+        "heading": "Begin by clicking the carrots 5 times to separate them into pieces!",
+        "carrot": "https://www.clker.com/cliparts/B/m/I/O/Z/n/carrots.svg"
     },
     {
         "id": 5,

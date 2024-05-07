@@ -345,3 +345,21 @@
       transform: rotateX(0deg) translateY(0px);
     }
   }
+
+  #carrot {
+    width: 350px;
+    height: auto;
+    cursor: pointer;
+}
+#carrotPieces {
+    display: flex;
+}
+.carrot-piece {
+    border: 2px solid orange;
+    margin: 5px;
+}
+#checkmark {
+    display: none;
+    color: green;
+    font-size: 36px;
+}

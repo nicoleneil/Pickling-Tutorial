@@ -133,10 +133,9 @@ body {
 
   {% if slide.id == 4 %}
 
-      <div id="container_carrot">
-        <img id="clickableImage_carrot" src="{{ slide.carrot }}" alt="Clickable Image">
-      </div>
-  </div>
+    <img id="carrot" src="{{ slide.carrot }}" alt="Carrot">
+    <div id="carrotPieces"></div>
+    <div id="checkmark">&#10004;</div>
 
   {% endif %}
 
