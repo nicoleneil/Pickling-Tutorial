@@ -1,3 +1,22 @@
+.btn-success {
+    background-color: green;
+    border-color: green;
+    color: #ffffff;
+    margin-right: 10px; /* Adjust as needed */
+}
+
+.btn-success:last-child {
+    margin-top: 20px;
+    margin-right: 0;
+}
+
+.btn-success:hover {
+    background-color: #8ae0ad;
+    border-color: #8ae0ad;
+    color: #ffffff;
+}
+
+
 @keyframes spin {
     from {
         transform: rotate(0deg);
