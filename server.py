@@ -70,7 +70,7 @@ learn_data = [
     {
         "id": 9,
         "instruction": "Fill the jar with brine and seal it.",
-        "heading": "Click to view each part!"
+        "heading": "Hover over to see closer!"
     },
     {
         "id": 10,
