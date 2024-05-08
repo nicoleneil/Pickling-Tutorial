@@ -17,26 +17,28 @@
 </head>
 
 <body>
-    <div class="heading-box">
+    <div class="pickle-font"> 
+      <div class="heading-box">
         <h1>{{ slide.qnum }}. {{ slide.question }}</h1>
-    </div>
-  
-    <form id="quiz-form" action="/submit_quiz" method="POST">
-      <div class="quiz-box-options">
-        {% if slide.options %}
-          {% for option in slide.options %}
-            <label><input type="radio" name="option" value="{{ option }}">  {{ option }}</label><br>
-          {% endfor %}
-        {% endif %}
       </div>
-      <input type="hidden" name="id" value="{{ slide.id }}"> <!-- Add hidden input to pass question id -->
-      <button id="submit_quiz" type="submit">Submit</button>
-      <p id="result" style="display:none;" data-answer="{{ slide.answer }}"></p>
-      <button id="next_quiz" style="display:none;">Next</button>
-    </form>
     
-
-  <script src="../static/quiz.js"></script>
+      <form id="quiz-form" action="/submit_quiz" method="POST">
+        <div class="quiz-box-options">
+          {% if slide.options %}
+            {% for option in slide.options %}
+              <label><input type="radio" name="option" value="{{ option }}">  {{ option }}</label><br>
+            {% endfor %}
+          {% endif %}
+        </div>
+        <input type="hidden" name="id" value="{{ slide.id }}"> <!-- Add hidden input to pass question id -->
+        <button id="submit_quiz" type="submit">Submit</button>
+        <p id="result" style="display:none;" data-answer="{{ slide.answer }}"></p>
+        <button id="next_quiz" style="display:none;">Next</button>
+      </form>
+      
+    <script src="../static/quiz.js"></script>
+    </div>
+    
 </body>
 
 </html>
