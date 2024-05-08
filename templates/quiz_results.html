@@ -9,12 +9,14 @@
     <title>Quiz Results</title>
 </head>
 <body>
-    <div class="heading-box">
-        <h1>Your Quiz Score: {{ user_score }}/4</h1>
+    <div class="pickle-font">
+        <div class="heading-box">
+            <h1>Your Quiz Score: {{ user_score }}/4</h1>
+        </div>
+        <form action="/reset_quiz">
+            <button id="reset_quiz" type="submit">Take the Quiz again</button>
+        </form>
     </div>
-    <form action="/reset_quiz">
-        <button id="reset_quiz" type="submit">Take the Quiz again</button>
-    </form>
 </body>
 </html>
 {% endblock %}
