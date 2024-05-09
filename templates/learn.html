@@ -19,6 +19,7 @@ body {
 
 <script>
     let slide = {{ slide | tojson | safe }};
+    console.log(slide)
 </script>
 
 <!DOCTYPE html>
@@ -244,6 +245,7 @@ body {
 
   <button id="prev_learn" {% if slide.id == 1 %} style="display: none;"{% endif %}>Previous step</button>
   <button id="next_learn">{% if slide.id == 11 %}Learn from Step 1 again{% else %}Next step{% endif %}</button>
+  <h1 id="timeHeading">Time when first finished: {{ slide.time }}</h1>
 
   <script src="../static/learn.js"></script>
 

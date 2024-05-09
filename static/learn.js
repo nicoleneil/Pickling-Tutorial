@@ -13,8 +13,53 @@ document.getElementById("next_learn").addEventListener("click", function() {
     }
     
     var nextNumber = number + 1;
-    console.log(nextNumber)
+    console.log(nextNumber);
     window.location.href = "http://127.0.0.1:5000/learn/" + nextNumber;
+
+    formData = slide;
+    console.log("here");
+    console.log(formData);
+    console.log("here2");
+
+    
+
+    slide.done = parseInt(slide.done) + 1;
+    done = slide.done;
+
+    if (done == 1) {
+        console.log("fuida")
+        var currentTime = new Date();
+
+        slide.time = currentTime;
+        var heading = document.getElementById("timeHeading");
+
+        // Set new text for the heading
+        heading.textContent = "Time when first finished: "+ slide.time;
+    }
+
+    $.ajax({
+        type: "POST",
+        url: 'http://127.0.0.1:5000/learner',
+        dataType: "json",
+        contentType: "application/json; charset=utf-8",
+        data: JSON.stringify(slide),
+        success: function (result) {
+            // Example: Updating text content
+        },
+        error: function (request, status, error) {
+            console.log("Error");
+            console.log(request);
+            console.log(status);
+            console.log(error);
+        }
+    });
+    //$('timeHeading').text("BLAH");
+
+    
+    
+
+    
+
 });
 
 document.getElementById("prev_learn").addEventListener("click", function() {
