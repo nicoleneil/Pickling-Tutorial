@@ -33,6 +33,7 @@
         <input type="hidden" name="id" value="{{ slide.id }}"> <!-- Add hidden input to pass question id -->
         <button id="submit_quiz" type="submit">Submit</button>
         <p id="result" style="display:none;" data-answer="{{ slide.answer }}"></p>
+        <h1 id="correctHeading">You were: {{ slide.correct }}</h1>
         <button id="next_quiz" style="display:none;">Next</button>
       </form>
       

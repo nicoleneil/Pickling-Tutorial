@@ -117,28 +117,40 @@ quiz_data = [
         "qnum": "1",
         "question": "Ultimately, the process of pickling is done as a food ___________ method.",
         "options": ["Preservation", "Enhancement", "Flavoring", "Sanitation"],
-        "answer": "Preservation"
+        "answer": "Preservation",
+        "correct": "",
+        "curval": "",
+        "appear": 0
     },
     {
         "id": 1,
         "qnum": "2",
         "question": "What is brine?",
         "options": ["Sugary water", "Salty water", "Sauce", "A type of vinegar"],
-        "answer": "Salty water"
+        "answer": "Salty water",
+        "correct": "",
+        "curval": "",
+        "appear": 0
     },
     {
         "id": 2,
         "qnum": "3",
         "question": "What is the best way to store canned/pickled food items?",
         "options": ["In a cool space, with natural sunlight.", "In a warm and damp place", "In a cool, dry, dark place", "In high humidity"],
-        "answer": "In a cool, dry, dark place"
+        "answer": "In a cool, dry, dark place",
+        "correct": "",
+        "curval": "",
+        "appear": 0
     },
     {
         "id": 3,
         "qnum": "4",
         "question": "Why is oxygen bad when pickling cucumbers?",
         "options": ["It allows spoilage microbes to grow.", "It affects the crunchiness of the pickles.", "It makes the pickles too sour.", "It will cause the pickles to ferment too quickly."],
-        "answer": "It allows spoilage microbes to grow."
+        "answer": "It allows spoilage microbes to grow.",
+        "correct": "",
+        "curval": "",
+        "appear": 0
     }
 ]
 
@@ -207,6 +219,15 @@ def submit_quiz():
         # Redirect to next question if not all questions are answered
         next_question_id = question_id + 1
         return redirect(url_for('quiz_slide', id=next_question_id))
+    
+@app.route('/submitter/', methods=['GET', 'POST'])
+def submitter():
+    json_data = request.get_json()
+    identity = json_data.get("id", "")
+    new_entry = json_data
+    quiz_data[int(identity)] = new_entry
+    print(quiz_data[int(identity)])
+    return jsonify(new_entry=new_entry)
 
 @app.route('/quiz_results')
 def quiz_results():
@@ -216,6 +237,10 @@ def quiz_results():
 
 @app.route('/reset_quiz')
 def reset_quiz():
+    for item in quiz_data:
+        item["correct"] = ""
+        item["curval"] = ""
+        item["appear"] = ""
     global user_score, answered_questions # Access the global variable
     user_score = 0  # Reset the user's score
     answered_questions.clear()  # Clear the set of answered questions
